@@ -23,9 +23,7 @@ const UndrawComponent = ({ data: { imgUrl, title, paragraph, imgAlt } }) => {
       >
         {title}
       </Heading>
-      <Text color="deepGray" textTransform="capitalize">
-        {paragraph}
-      </Text>
+      <Text color="deepGray">{paragraph}</Text>
     </Stack>
   );
 };

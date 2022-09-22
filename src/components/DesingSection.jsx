@@ -13,15 +13,15 @@ const DesingSection = () => {
     <Grid
       gridTemplateRows={{
         base: "auto",
-        md: "repeat(2,1fr)",
+        sm: "repeat(2,1fr)",
       }}
       px={{ base: 2, md: 10 }}
       gridTemplateColumns={{
         base: "repeat(autofit,minmax(100px,1fr))",
-        md: "repeat(2,1fr)",
+        sm: "repeat(2,1fr)",
       }}
       gridTemplateAreas={gridArea}
-      w={{ base: "full", md: "container.lg" }}
+      w={{ base: "full", md: "container.md", lg: "container.lg" }}
       m="0 auto"
       gap={13}
       h="md"

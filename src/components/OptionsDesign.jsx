@@ -24,7 +24,7 @@ const OptionsDesign = ({ title, route, gridArea, urlBackground }) => {
           backdropFilter: "blur(2px)",
         }}
       >
-        <Heading letterSpacing={2} textTransform="capitalize" color="#fff">
+        <Heading letterSpacing={2} textTransform="uppercase" color="#fff">
           {title}
         </Heading>
         <Link href={route}>

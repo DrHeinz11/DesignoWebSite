@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Button, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import PhoneMockup from "../assets/PhoneMockup.png";
 
@@ -12,7 +12,8 @@ const Header = () => {
       backgroundPosition={{ base: "0rem 14rem", sm: "right" }}
       backgroundRepeat="no-repeat"
       backgroundSize={{ base: "25rem", md: "auto" }}
-      w={{ base: "full", md: "container.lg" }}
+      w={{ base: "full", sm: "container.md", md: "container.lg" }}
+      maxW="full"
       h={{ base: "35rem", md: "75vh" }}
       borderRadius="xl"
       margin={"0 auto"}

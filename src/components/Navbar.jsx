@@ -1,8 +1,10 @@
-import { Heading, Stack, Text } from "@chakra-ui/react";
-import Logo from "./Logo";
+import { Stack } from "@chakra-ui/react";
+import CustomLink from "./CustomLink";
+import dataLink from "../constants/dataLink";
 import { Link } from "wouter";
+import Logo from "./Logo";
 
-const Navbar = () => {
+const Navbar = ({ fontColor = "deepGray" }) => {
   return (
     <Stack
       direction="row"
@@ -13,36 +15,14 @@ const Navbar = () => {
     >
       <Logo />
       <Stack direction="row" spacing={4}>
-        <Link href="/links">
-          <Text
-            color={"deepGray"}
-            fontWeight="500"
-            textTransform="uppercase"
-            letterSpacing={2}
-          >
-            our company
-          </Text>
-        </Link>
-        <Link href="/links">
-          <Text
-            color={"deepGray"}
-            fontWeight="500"
-            textTransform="uppercase"
-            letterSpacing={2}
-          >
-            locations
-          </Text>
-        </Link>
-        <Link href="/links">
-          <Text
-            color={"deepGray"}
-            fontWeight="500"
-            textTransform="uppercase"
-            letterSpacing={2}
-          >
-            contact
-          </Text>
-        </Link>
+        {dataLink.map((element, index) => (
+          <CustomLink
+            key={index}
+            fontColor={fontColor}
+            route={element.route}
+            text={element.text}
+          />
+        ))}
       </Stack>
     </Stack>
   );
