@@ -3,8 +3,9 @@ import CustomLink from "./CustomLink";
 import dataLink from "../constants/dataLink";
 import Logo from "./Logo";
 import { Link } from "wouter";
+import HamburgerMenu from "./HamburgerMenu";
 
-const Navbar = ({ fontColor = "deepGray" }) => {
+const Navbar = ({ fontColor = "deepGray", menu }) => {
   return (
     <Stack
       direction="row"
@@ -30,6 +31,7 @@ const Navbar = ({ fontColor = "deepGray" }) => {
           />
         ))}
       </Stack>
+      {menu && <HamburgerMenu />}
     </Stack>
   );
 };

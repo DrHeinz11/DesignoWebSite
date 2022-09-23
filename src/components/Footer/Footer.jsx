@@ -15,7 +15,7 @@ const Footer = () => {
       minH="sm"
       color="#efefef"
     >
-      <Navbar fontColor="#efefef" />
+      <Navbar fontColor="#efefef" menu={false} />
       <Divider />
       <Stack
         direction="row"

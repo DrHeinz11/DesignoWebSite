@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Stack alignItems="center" maxWidth="1000px" gap={2} margin="0 auto">
-        <Navbar />
+        <Navbar menu={true} />
         <Route path="/">
           <Home />
         </Route>
