@@ -9,14 +9,20 @@ const Footer = () => {
     <Stack
       bg="deepGray"
       px={{ base: 2, md: 20 }}
-      pt={{ base: 10, md: 32 }}
+      pt={{ base: 10, md: "36" }}
+      pb={10}
       w="full"
-      h="sm"
+      minH="sm"
       color="#efefef"
     >
       <Navbar fontColor="#efefef" />
       <Divider />
-      <Stack direction="row" justify="space-between">
+      <Stack
+        direction="row"
+        justify={{ base: "center", md: "space-between" }}
+        gap={10}
+        flexWrap="wrap-reverse"
+      >
         <FooterContact />
         <MediaIcon />
       </Stack>

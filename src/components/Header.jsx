@@ -12,8 +12,8 @@ const Header = () => {
       backgroundPosition={{ base: "0rem 14rem", sm: "right" }}
       backgroundRepeat="no-repeat"
       backgroundSize={{ base: "25rem", md: "auto" }}
-      w={{ base: "full", sm: "container.md", md: "container.lg" }}
-      maxW="full"
+      // w={{ base: "full", sm: "container.md", md: "container.lg" }}
+      w="full"
       h={{ base: "35rem", md: "75vh" }}
       borderRadius="xl"
       margin={"0 auto"}
@@ -23,6 +23,7 @@ const Header = () => {
         w={{ base: "full", sm: "sm", md: "md" }}
         px={5}
         py={14}
+        gap={2}
       >
         <Heading color="#fafafa">
           Award-winning custom designs and digital branding solutions

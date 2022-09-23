@@ -4,7 +4,7 @@ import React from "react";
 
 const UndrawComponent = ({ data: { imgUrl, title, paragraph, imgAlt } }) => {
   return (
-    <Stack textAlign="center" alignItems="center" w="sm" p="2">
+    <Stack textAlign="center" alignItems="center" w="xs" p="2">
       <Stack
         h="fit-content"
         justify="center"
@@ -13,17 +13,20 @@ const UndrawComponent = ({ data: { imgUrl, title, paragraph, imgAlt } }) => {
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
       >
-        <Image src={imgUrl} alt={imgAlt} />
+        <Image w="288px" src={imgUrl} alt={imgAlt} />
       </Stack>
       <Heading
         color="#000"
         textTransform="uppercase"
+        fontSize="2xl"
         letterSpacing={3}
         fontWeight="500"
       >
         {title}
       </Heading>
-      <Text color="deepGray">{paragraph}</Text>
+      <Text fontSize="md" color="deepGray">
+        {paragraph}
+      </Text>
     </Stack>
   );
 };

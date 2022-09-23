@@ -15,7 +15,7 @@ const Navbar = ({ fontColor = "deepGray" }) => {
       w="full"
       p={4}
     >
-      <Link href="/web#desing">
+      <Link href="/">
         <a>
           <Logo />
         </a>

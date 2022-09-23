@@ -8,7 +8,7 @@ const FooterContainer = () => {
       position="relative"
       alignItems="center"
       justifyContent="center"
-      mt={{ base: 5, md: 44 }}
+      mt={{ base: 5, lg: 52 }}
       gap={{ base: 5, md: 0 }}
     >
       <TalkAbout />
