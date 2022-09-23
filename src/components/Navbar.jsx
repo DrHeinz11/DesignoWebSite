@@ -8,13 +8,15 @@ const Navbar = ({ fontColor = "deepGray" }) => {
   return (
     <Stack
       direction="row"
+      flexWrap="wrap"
       align="center"
-      justify="space-between"
+      justifyContent={{ base: "center", md: "space-between" }}
+      gap={4}
       w="full"
       p={4}
     >
       <Logo />
-      <Stack direction="row" spacing={4}>
+      <Stack direction="row" spacing={4} alignItems="center">
         {dataLink.map((element, index) => (
           <CustomLink
             key={index}

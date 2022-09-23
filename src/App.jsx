@@ -10,7 +10,7 @@ import FooterContainer from "./components/Footer/FooterContainer";
 function App() {
   return (
     <>
-      <Stack gap={10} alignItems="center" maxWidth="1200px" margin="0 auto">
+      <Stack alignItems="center" maxWidth="1200px" margin="0 auto">
         <Navbar />
         <Header />
         <Stack flexWrap="wrap" direction="row" p={2} justify="center">

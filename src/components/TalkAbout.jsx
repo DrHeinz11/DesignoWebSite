@@ -12,8 +12,8 @@ const TalkAbout = () => {
       borderRadius="xl"
       w={{ base: "container.sm", md: "container.md", lg: "container.lg" }}
       maxW="full"
-      position="absolute"
-      bottom="17rem"
+      position={{ base: "initial", md: "absolute" }}
+      bottom="16rem"
     >
       <Stack
         flexWrap="wrap"
@@ -21,7 +21,8 @@ const TalkAbout = () => {
         backdropFilter="blur(7px)"
         h="full"
         w="full"
-        p={{ base: 4, md: 14 }}
+        px={{ base: 4, md: 14 }}
+        py={{ base: 4, md: 20 }}
         borderRadius="xl"
         alignItems="center"
         gap={10}

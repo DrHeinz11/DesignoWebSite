@@ -9,7 +9,7 @@ const Footer = () => {
     <Stack
       bg="deepGray"
       px={{ base: 2, md: 20 }}
-      pt={"32"}
+      pt={{ base: 10, md: 32 }}
       w="full"
       h="sm"
       color="#efefef"

@@ -7,7 +7,7 @@ const CustomLink = ({ fontColor, route, text }) => {
       <Text
         cursor="pointer"
         color={fontColor}
-        fontWeight="500"
+        fontWeight="400"
         textTransform="uppercase"
         letterSpacing={2}
       >
