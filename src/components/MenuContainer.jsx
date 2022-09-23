@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Stack } from "@chakra-ui/react";
+import { Box, Stack, keyframes } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import dataLink from "../constants/dataLink";
 import CustomLink from "./CustomLink";
 import { CloseIcon } from "@chakra-ui/icons";
@@ -9,6 +10,13 @@ const MenuContainer = ({ toggleMenu }) => {
   const handleClick = (toggleMenu) => {
     MenuSignal.setSignal(!toggleMenu);
   };
+
+  const animationKeyframes = keyframes`
+  0% { transform: translate3d(0, -25rem, 0px) }
+  100% { transform: translate3d(0, 0, 0px) }
+`;
+
+  const animation = `${animationKeyframes} 1s ease-in-out`;
 
   return (
     <>
@@ -25,6 +33,8 @@ const MenuContainer = ({ toggleMenu }) => {
           onClick={() => handleClick(toggleMenu)}
         >
           <Stack
+            as={motion.div}
+            animation={animation}
             direction="row"
             position="relative"
             justify="center"
