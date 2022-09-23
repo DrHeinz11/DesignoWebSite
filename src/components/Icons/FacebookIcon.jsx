@@ -1,8 +1,16 @@
 import { chakra } from "@chakra-ui/react";
 const FacebookIcon = ({ props, route }) => (
-  <chakra.a href={route} target="_blank" rel="noopener">
+  <chakra.a
+    p={2}
+    _hover={{
+      filter: "drop-shadow(0 0 0.75rem #fff)",
+      transition: "filter 300ms ease-in-out",
+    }}
+    href={route}
+    target="_blank"
+    rel="noopener"
+  >
     <chakra.svg
-      _hover={{ fill: "#000" }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="#e9806b"
