@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 import CustomLink from "./CustomLink";
 import dataLink from "../constants/dataLink";
 import Logo from "./Logo";
@@ -11,7 +11,7 @@ const Navbar = ({ fontColor = "deepGray", menu }) => {
       direction="row"
       flexWrap="wrap"
       align="center"
-      justifyContent={{ base: "center", md: "space-between" }}
+      justifyContent="space-between"
       gap={4}
       w="full"
       p={4}
@@ -21,7 +21,12 @@ const Navbar = ({ fontColor = "deepGray", menu }) => {
           <Logo />
         </a>
       </Link>
-      <Stack direction="row" spacing={4} alignItems="center">
+      <Stack
+        direction="row"
+        display={{ base: "none", md: "flex" }}
+        spacing={4}
+        alignItems="center"
+      >
         {dataLink.map((element, index) => (
           <CustomLink
             key={index}
@@ -31,7 +36,9 @@ const Navbar = ({ fontColor = "deepGray", menu }) => {
           />
         ))}
       </Stack>
-      {menu && <HamburgerMenu />}
+      <Box display={{ base: "block", md: "none" }}>
+        {menu && <HamburgerMenu />}
+      </Box>
     </Stack>
   );
 };

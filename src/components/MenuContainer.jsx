@@ -24,8 +24,15 @@ const MenuContainer = ({ toggleMenu }) => {
           zIndex="popover"
           onClick={() => handleClick(toggleMenu)}
         >
-          <Stack direction="row" h="50vh" w="full" background="lightGray">
-            <Box>
+          <Stack
+            direction="row"
+            position="relative"
+            justify="center"
+            h="50vh"
+            w="full"
+            background="lightGray"
+          >
+            <Stack direction="column" justify="center" gap={10} h="full">
               {dataLink.map((element, index) => (
                 <CustomLink
                   key={index}
@@ -33,8 +40,14 @@ const MenuContainer = ({ toggleMenu }) => {
                   text={element.text}
                 />
               ))}
-            </Box>
-            <CloseIcon onClick={() => handleClick(toggleMenu)} />
+            </Stack>
+            <CloseIcon
+              position="absolute"
+              right="4"
+              top="4"
+              boxSize="2rem"
+              onClick={() => handleClick(toggleMenu)}
+            />
           </Stack>
         </Box>
       )}

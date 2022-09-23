@@ -13,7 +13,7 @@ const HamburgerMenu = () => {
   const handleToggleMenu = () => setToggleMenu((prev) => !prev);
   return (
     <>
-      <HamburgerIcon onClick={handleToggleMenu} />
+      <HamburgerIcon boxSize="2rem" onClick={handleToggleMenu} />
       <MenuContainer toggleMenu={toggleMenu} />
     </>
   );
