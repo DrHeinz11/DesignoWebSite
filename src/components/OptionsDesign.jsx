@@ -1,5 +1,6 @@
 import { Box, Heading, Text, GridItem } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import handleScrollTop from "../utils/handleScrollTop";
 import React from "react";
 import { Link } from "wouter";
 
@@ -27,7 +28,7 @@ const OptionsDesign = ({ title, route, gridArea, urlBackground }) => {
         <Heading letterSpacing={2} textTransform="uppercase" color="#fff">
           {title}
         </Heading>
-        <Link href={route}>
+        <Link onClick={handleScrollTop} href={route}>
           <Text
             display="flex"
             alignItems="center"
