@@ -1,7 +1,7 @@
 import { Link, Heading, Image, Stack, Text, Button } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import CustomTag from "../../components/CustomTag";
 import React from "react";
+import TecnologyArticle from "./TecnologyArticle";
 
 const ProjectsCard = ({
   title,
@@ -24,20 +24,7 @@ const ProjectsCard = ({
       <Image src={urlThumbnail} alt={title} />
       <Text>{description}</Text>
       <Stack direction="column" gap={2} alignItems="flex-start">
-        {technology && (
-          <>
-            <Text fontSize="xs">Technology</Text>
-            <Stack spacing={2} direction="row" wrap={"wrap"}>
-              {technology.map((element) => (
-                <CustomTag
-                  key={element.key}
-                  technologyName={element.technologyName}
-                  technologyUrl={element.technologyUrl}
-                />
-              ))}
-            </Stack>{" "}
-          </>
-        )}
+        {technology && <TecnologyArticle technology={technology} />}
 
         <Stack w="full" direction="row" justify="center">
           <Link href={route} target="_blank" rel="noopener">
