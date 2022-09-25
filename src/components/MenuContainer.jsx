@@ -16,7 +16,7 @@ const MenuContainer = ({ toggleMenu }) => {
   100% { transform: translate3d(0, 0, 0px) }
 `;
 
-  const animation = `${animationKeyframes} 500ms ease-in-out`;
+  const animation = `${animationKeyframes} 250ms ease-in-out`;
 
   return (
     <>
