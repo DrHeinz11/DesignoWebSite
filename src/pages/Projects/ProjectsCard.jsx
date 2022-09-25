@@ -13,8 +13,9 @@ const ProjectsCard = ({
   return (
     <Stack
       borderRadius="xl"
-      border="1px solid black"
+      boxShadow="md"
       gap={2}
+      bg="#fbfbfb"
       p={4}
       textAlign="center"
       textTransform="capitalize"
@@ -40,13 +41,13 @@ const ProjectsCard = ({
 
         <Stack w="full" direction="row" justify="center">
           <Link href={route} target="_blank" rel="noopener">
-            <Button variant="solid" size="md">
+            <Button colorScheme="orange" variant="solid" size="md">
               Web demo <ExternalLinkIcon ml={1} />
             </Button>
           </Link>
 
           <Link href={route} target="_blank" rel="noopener">
-            <Button variant="outline" size="md">
+            <Button colorScheme="orange" variant="outline" size="md">
               Repository <ExternalLinkIcon ml={1} />
             </Button>
           </Link>
