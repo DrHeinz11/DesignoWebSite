@@ -15,7 +15,7 @@ const Header = () => {
       // w={{ base: "full", sm: "container.md", md: "container.lg" }}
       w="full"
       h={{ base: "35rem", md: "75vh" }}
-      borderRadius="xl"
+      borderRadius={{ base: "0", md: "xl" }}
       margin={"0 auto"}
     >
       <Stack

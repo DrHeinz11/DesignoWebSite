@@ -7,9 +7,7 @@ const webDesign = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        return `/project/web-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -17,9 +15,7 @@ const webDesign = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        return `/project/web-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -27,9 +23,7 @@ const webDesign = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        return `/project/web-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -37,9 +31,7 @@ const webDesign = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        return `/project/web-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -47,9 +39,7 @@ const webDesign = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        return `/project/web-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -57,9 +47,7 @@ const webDesign = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        return `/project/web-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
   ],
 };
@@ -72,9 +60,7 @@ const appDesing = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -82,9 +68,7 @@ const appDesing = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -92,9 +76,7 @@ const appDesing = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -102,9 +84,7 @@ const appDesing = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -112,9 +92,7 @@ const appDesing = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -122,9 +100,7 @@ const appDesing = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-design/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
   ],
 };
@@ -136,10 +112,38 @@ const appProject = {
       key: "",
       urlThumbnail: "",
       description: "",
-      technology: "",
-      route() {
-        `/project/app-project/${this.title}`;
-      },
+      technology: [
+        {
+          technologyName: "Redux",
+          technologyUrl: "https://cdn.worldvectorlogo.com/logos/redux.svg",
+          key: "a1",
+        },
+        {
+          technologyName: "React",
+          technologyUrl: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+          key: "a2",
+        },
+      ],
+      route: "https://www.google.com",
+    },
+    {
+      title: "1",
+      key: "",
+      urlThumbnail: "",
+      description: "",
+      technology: [
+        {
+          technologyName: "Redux",
+          technologyUrl: "https://cdn.worldvectorlogo.com/logos/redux.svg",
+          key: "a1",
+        },
+        {
+          technologyName: "React",
+          technologyUrl: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+          key: "a2",
+        },
+      ],
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -147,9 +151,7 @@ const appProject = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-project/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -157,9 +159,7 @@ const appProject = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-project/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -167,9 +167,7 @@ const appProject = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-project/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
     {
       title: "1",
@@ -177,19 +175,7 @@ const appProject = {
       urlThumbnail: "",
       description: "",
       technology: "",
-      route() {
-        `/project/app-project/${this.title}`;
-      },
-    },
-    {
-      title: "1",
-      key: "",
-      urlThumbnail: "",
-      description: "",
-      technology: "",
-      route() {
-        `/project/app-project/${this.title}`;
-      },
+      route: "https://www.google.com",
     },
   ],
 };

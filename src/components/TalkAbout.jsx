@@ -9,7 +9,7 @@ const TalkAbout = () => {
       backgroundRepeat="no-repeat"
       backgroundSize={"cover"}
       backgroundColor="mainOrange"
-      borderRadius="xl"
+      borderRadius={{ base: 0, md: "xl" }}
       w={{ base: "full", md: "container.md", lg: "container.lg" }}
       maxW="1000px"
       position={{ base: "initial", lg: "absolute" }}
