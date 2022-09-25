@@ -1,10 +1,9 @@
 import "./App.css";
 import { Route } from "wouter";
-import Home from "./pages/Home";
-import WebDesingPage from "./pages/WebDesingPage";
+import Home from "./pages/Home/Home";
+import WebDesingPage from "./pages/Projects/WebDesingPage";
 import { Stack } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-
 import FooterContainer from "./components/Footer/FooterContainer";
 function App() {
   return (

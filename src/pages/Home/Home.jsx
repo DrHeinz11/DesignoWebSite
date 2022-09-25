@@ -1,7 +1,7 @@
-import { undrawData } from "../constants/undrawData";
-import DesingSection from "../components/DesingSection";
-import UndrawComponent from "../components/UndrawComponent";
-import Header from "../components/Header";
+import { undrawData } from "../../constants/undrawData";
+import DesingSection from "../../components/DesingSection";
+import UndrawComponent from "../../components/UndrawComponent";
+import Header from "../../components/Header";
 import { Stack } from "@chakra-ui/react";
 
 const Home = () => {
