@@ -1,5 +1,7 @@
 import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
+import { Link } from "wouter";
 import BubbleBG from "../assets/BubleBg.svg";
+import handleScrollTop from "../utils/handleScrollTop";
 
 const TalkAbout = () => {
   return (
@@ -40,9 +42,11 @@ const TalkAbout = () => {
             business grow.
           </Text>
         </Box>
-        <Button color="#000" size={{ base: "md", lg: "lg" }}>
-          GET IN TOUCH
-        </Button>
+        <Link href={"/contact"} onClick={handleScrollTop}>
+          <Button color="#000" size={{ base: "md", lg: "lg" }}>
+            GET IN TOUCH
+          </Button>
+        </Link>
       </Stack>
     </Box>
   );
