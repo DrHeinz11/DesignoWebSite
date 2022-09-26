@@ -4,8 +4,8 @@ import CustomTag from "../../components/CustomTag";
 const TecnologyArticle = ({ technology }) => {
   return (
     <>
-      <Text fontSize="xs">Technology</Text>
-      <Stack spacing={2} direction="row" wrap={"wrap"}>
+      <Text fontSize="sm">Technology:</Text>
+      <Stack gap={2} direction="row" wrap={"wrap"}>
         {technology.map((element) => (
           <CustomTag
             key={element.key}

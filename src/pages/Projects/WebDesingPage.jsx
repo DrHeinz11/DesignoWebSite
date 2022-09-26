@@ -15,8 +15,8 @@ const WebDesingPage = ({ params }) => {
         w="full"
         p={4}
         gap={10}
-        gridTemplateColumns={"repeat(auto-fill,minmax(250px,1fr))"}
-        alignItems="center"
+        gridTemplateColumns={"repeat(auto-fill,minmax(300px,1fr))"}
+        alignItems="flex-start"
       >
         {DataFilter?.map((element) =>
           element.data?.map((element, i) => (
@@ -32,13 +32,13 @@ const WebDesingPage = ({ params }) => {
         )}
       </Grid>
       {gridItemData && (
-        <Stack direction="row" wrap={"wrap"} gap="10">
+        <Stack direction="row" wrap={"wrap"} gap={5}>
           {gridItemData?.map(
             (element, index) =>
               element.key !== params.id && (
                 <Box
                   margin="0 !important"
-                  h="2xs"
+                  h={40}
                   w={{ base: "full", md: "sm" }}
                   key={index}
                 >
