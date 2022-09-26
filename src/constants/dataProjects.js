@@ -43,7 +43,7 @@ const appDesing = {
   id: "app-design",
   data: [
     {
-      title: "1",
+      title: "PayPapp",
       key: "",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/3184316/file/original-247c650b71be00c5598cb1deeab83eee.png?compress=1&resize=1504x1128",
@@ -66,11 +66,12 @@ const appDesing = {
       route: "https://www.google.com",
     },
     {
-      title: "1",
+      title: "TennisLeague",
       key: "",
       urlThumbnail:
         "https://cdn.dribbble.com/users/5031392/screenshots/17556719/media/592e46c2d3a56e30eec1b1e400920030.png?compress=1&resize=1200x900&vertical=top",
-      description: "",
+      description:
+        "Fill in the form and the app will show you proper tennis clubs that are near you. Users can reserve the place or create their own tennis clubs",
       technology: "",
       route: "https://www.google.com",
     },
