@@ -47,8 +47,22 @@ const appDesing = {
       key: "",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/3184316/file/original-247c650b71be00c5598cb1deeab83eee.png?compress=1&resize=1504x1128",
-      description: "",
-      technology: "",
+      description:
+        "An app dedicated to keeping you on track with your finances, setting goals, tracking your progress, and sending payments. A spending tracker helps to keep you aware of your spending routine and target your goals.",
+      technology: [
+        {
+          technologyName: "Figma",
+          key: "a1",
+        },
+        {
+          technologyName: "Framer Motion",
+          key: "a2",
+        },
+        {
+          technologyName: "Illustrator",
+          key: "a3",
+        },
+      ],
       route: "https://www.google.com",
     },
     {
