@@ -1,9 +1,10 @@
 import { Tag, TagLabel, Image } from "@chakra-ui/react";
 
-const CustomTag = ({ technologyName, technologyUrl }) => {
+const CustomTag = ({ key, technologyName, technologyUrl }) => {
   return (
     <>
       <Tag
+        key={key}
         margin="0 !important"
         variant={!technologyUrl && "subtle"}
         colorScheme={!technologyUrl && "orange"}

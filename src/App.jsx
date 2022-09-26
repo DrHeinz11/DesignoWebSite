@@ -1,7 +1,5 @@
 import "./App.css";
-import { Route } from "wouter";
-import Home from "./pages/Home/Home";
-import WebDesingPage from "./pages/Projects/WebDesingPage";
+import Routes from "./routes/Routes";
 import { Stack } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import FooterContainer from "./components/Footer/FooterContainer";
@@ -10,13 +8,7 @@ function App() {
     <>
       <Stack alignItems="center" maxWidth="1000px" gap={2} margin="0 auto">
         <Navbar menu={true} />
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/links">About Us</Route>
-        <Route path="/project/:id">
-          {(params) => <WebDesingPage params={params} />}
-        </Route>
+        <Routes />
       </Stack>
       <FooterContainer />
     </>

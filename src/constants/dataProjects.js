@@ -2,39 +2,59 @@ const webDesign = {
   id: "web-design",
   data: [
     {
-      title: "1",
-      key: "",
+      title: "BLITZ branding",
+      key: "a1",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/2669608/file/original-a7c98dca8e2f1b21f7a7730119dc792a.png?compress=1&resize=752x",
-      description: "",
-      technology: "",
+      description:
+        "Create branding for bussines related an 3D modeling and customizable desing for 3D articles",
+      technology: [
+        { technologyName: "Figma", key: "ab1" },
+        { technologyName: "Framer Motion", key: "ab2" },
+        { technologyName: "Photoshop", key: "ab3" },
+        { technologyName: "Illustrator", key: "ab4" },
+      ],
       route: "https://www.google.com",
     },
     {
-      title: "1",
-      key: "",
+      title: "Schweiz Travel",
+      key: "ab2",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/3345882/file/original-2385956443b344fbb7be9a5fffef2802.png?compress=1&resize=752x",
-      description: "",
-      technology: "",
+      description:
+        "Design and branding for bussiner related of travel in switzerland",
+      technology: [
+        { technologyName: "AdobeXD", key: "ab1" },
+        { technologyName: "Photoshop", key: "ab3" },
+        { technologyName: "Illustrator", key: "ab4" },
+      ],
       route: "https://www.google.com",
     },
     {
-      title: "1",
-      key: "",
+      title: "Gallery shop",
+      key: "ab4",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/3005356/file/original-619c64119a2c9edb79ae6ea8f96ffef8.png?compress=1&resize=752x",
-      description: "",
-      technology: "",
+      description: "Web shop desing for bussines related an art",
+      technology: [
+        { technologyName: "Canva", key: "ab11" },
+        { technologyName: "Svg Creator", key: "ab22" },
+        { technologyName: "Blender", key: "ab33" },
+      ],
       route: "https://www.google.com",
     },
     {
-      title: "1",
-      key: "",
+      title: "SHOCK .inc",
+      key: "ab123",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/2970031/file/original-23d3a61fd60547d53813e365afc1761f.png?compress=1&resize=752x",
-      description: "",
-      technology: "",
+      description:
+        "Desing for  bussines related an clothing digital,ecologioc and reutilizable",
+      technology: [
+        { technologyName: "Canva", key: "ab11" },
+        { technologyName: "Svg Creator", key: "ab22" },
+        { technologyName: "Blender", key: "ab33" },
+      ],
       route: "https://www.google.com",
     },
   ],
@@ -44,7 +64,7 @@ const appDesing = {
   data: [
     {
       title: "PayPapp",
-      key: "",
+      key: "asd25",
       urlThumbnail:
         "https://cdn.dribbble.com/userupload/3184316/file/original-247c650b71be00c5598cb1deeab83eee.png?compress=1&resize=1504x1128",
       description:
@@ -67,12 +87,25 @@ const appDesing = {
     },
     {
       title: "TennisLeague",
-      key: "",
+      key: "asd22",
       urlThumbnail:
         "https://cdn.dribbble.com/users/5031392/screenshots/17556719/media/592e46c2d3a56e30eec1b1e400920030.png?compress=1&resize=1200x900&vertical=top",
       description:
         "Fill in the form and the app will show you proper tennis clubs that are near you. Users can reserve the place or create their own tennis clubs",
-      technology: "",
+      technology: [
+        {
+          technologyName: "Figma",
+          key: "a1",
+        },
+        {
+          technologyName: "Framer Motion",
+          key: "a2",
+        },
+        {
+          technologyName: "Illustrator",
+          key: "a3",
+        },
+      ],
       route: "https://www.google.com",
     },
   ],

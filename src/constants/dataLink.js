@@ -1,7 +1,7 @@
 const dataLink = [
-  { route: "/links", text: "our company" },
-  { route: "/links", text: "location" },
-  { route: "/links", text: "contact" },
+  { route: "/about-us", text: "our company" },
+  { route: "/about-us/location", text: "location" },
+  { route: "/contact", text: "contact" },
 ];
 
 export default dataLink;
