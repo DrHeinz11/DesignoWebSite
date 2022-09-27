@@ -2,17 +2,25 @@ import { undrawData } from "../../constants/undrawData";
 import DesingSection from "../../components/DesingSection";
 import UndrawComponent from "../../components/UndrawComponent";
 import Header from "../../components/Header";
-import { Stack } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Stack flexWrap="wrap" direction="row" p={2} justify="center">
+      <Grid
+        gridTemplateColumns={"repeat(auto-fill,minmax(300px,1fr))"}
+        justifyItems="center"
+        alignItems="center"
+        w="full"
+        minH="100vh"
+        gap={2}
+        p={2}
+      >
         {undrawData.map((element, index) => (
           <UndrawComponent data={element} key={index} />
         ))}
-      </Stack>
+      </Grid>
       <DesingSection />
     </>
   );
