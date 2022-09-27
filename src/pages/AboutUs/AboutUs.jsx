@@ -1,4 +1,4 @@
-import { Image, Stack } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import React from "react";
 import CustomHeaderBox from "../../components/Custom/CustomHeaderBox";
 

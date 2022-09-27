@@ -29,7 +29,7 @@ const CustomHeaderBox = ({ children, heading, paragraph }) => {
           <Heading color="#000">{heading}</Heading>
           <Text color="#111">{paragraph}</Text>
         </Stack>
-        <Box h="100%">{children}</Box>
+        {children && <Box h="100%">{children}</Box>}
       </Stack>
     </Box>
   );
