@@ -2,12 +2,13 @@ import { undrawData } from "../../constants/undrawData";
 import DesingSection from "../../components/DesingSection";
 import UndrawComponent from "../../components/UndrawComponent";
 import Header from "./Header";
-import { Grid } from "@chakra-ui/react";
+import { Divider, Grid } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <>
       <Header />
+      <Divider />
       <Grid
         gridTemplateColumns={"repeat(auto-fill,minmax(300px,1fr))"}
         justifyItems="center"
@@ -21,6 +22,7 @@ const Home = () => {
           <UndrawComponent data={element} key={index} />
         ))}
       </Grid>
+      <Divider />
       <DesingSection />
     </>
   );

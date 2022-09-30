@@ -7,12 +7,13 @@ const ContactForm = () => {
     setFormData(ev.target.data);
   };
   return (
-    <Stack
+    <Stack maxW='full'
       direction="row"
-      p={10}
+      p={{ base: 4, md: 10 }}
       bg="mainOrange"
       borderRadius="xl"
       boxShadow="sm"
+      wrap="wrap"
     >
       <Box flex="1" margin="auto 0">
         <Heading color="#340000" p={2}>
@@ -31,7 +32,7 @@ const ContactForm = () => {
         display="flex"
         flexDirection="column"
         gap={10}
-        px="10"
+        px={{ base: 5, md: 10 }}
         py="5"
       >
         <chakra.input
@@ -82,7 +83,7 @@ const ContactForm = () => {
           fontWeight="light"
           size="md"
           w="fit-content"
-          alignSelf={"flex-end"}
+          alignSelf={{ base: "center", md: "flex-end" }}
           variant="solid"
         >
           Send Message

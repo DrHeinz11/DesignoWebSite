@@ -2,16 +2,17 @@ import PagesHeading from "../AboutUs/PagesHeading";
 import CountryCard from "../AboutUs/CountryCard";
 import { dataCountry } from "../../constants/dataCountry";
 import ContactForm from "./ContactForm";
-import { Grid, Stack } from "@chakra-ui/react";
+import { Divider, Grid, Stack } from "@chakra-ui/react";
 
 const Contact = () => {
   return (
-    <Stack gap={10}>
+    <Stack gap={10} maxW='full' px='4'>
       <PagesHeading
         heading="Contact"
         copy="Puedes contactarnos via email o por nuestras redes sociales"
         imageUrl="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       />
+      <Divider/>
       <ContactForm />
       <Grid
         minH="50vh"
