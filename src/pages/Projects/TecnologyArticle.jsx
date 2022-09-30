@@ -1,5 +1,5 @@
 import { Stack, Text } from "@chakra-ui/react";
-import CustomTag from "../../components/CustomTag";
+import CustomTag from "../../components/Custom/CustomTag";
 
 const TecnologyArticle = ({ technology }) => {
   return (

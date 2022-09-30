@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Stack, keyframes } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import dataLink from "../constants/dataLink";
-import CustomLink from "./CustomLink";
+import dataLink from "../../constants/dataLink";
+import CustomLink from '../Custom/CustomLink';
 import { CloseIcon } from "@chakra-ui/icons";
-import { MenuSignal } from "../services/ClickOutside-manager.service";
+import { MenuSignal } from "../../services/ClickOutside-manager.service";
 
 const MenuContainer = ({ toggleMenu }) => {
   const handleClick = (toggleMenu) => {

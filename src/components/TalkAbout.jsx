@@ -36,7 +36,7 @@ const TalkAbout = () => {
           <Heading fontSize="4xl" fontWeight="300">
             Let´s talk about your project
           </Heading>
-          <Text fontSize="lg">Ready to take it to the netxt level?</Text>
+          <Text fontSize="lg">Ready to take it to the next level?</Text>
           <Text fontSize="lg">
             Contant us today and find out how our expertise can help your
             business grow.

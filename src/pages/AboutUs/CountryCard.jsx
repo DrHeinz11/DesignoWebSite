@@ -1,18 +1,26 @@
 import { Stack, Box, Image, Button, Heading } from "@chakra-ui/react";
+import { Link } from "wouter";
+import handleScrollTop from "../../utils/handleScrollTop";
 import UndrawBG from "../../assets/UndrawBG.svg";
-const CountryCard = ({ props: { country, imgUrl } }) => {
+const CountryCard = ({ props: { country, imgUrl, route } }) => {
   return (
-    <Box
-      backgroundImage={`url(${UndrawBG})`}
-      backgroundPosition="top"
-      backgroundSize="contain"
-      backgroundRepeat="no-repeat"
-      h='full'
+    <Stack
+      alignItems="center"
+      textAlign="center"
+      justifyContent="space-between"
     >
-      <Stack h='inherit' alignItems="center" textAlign='center' justifyItems="center">
+      <Box
+        backgroundImage={`url(${UndrawBG})`}
+        backgroundPosition="top"
+        backgroundSize="contain"
+        backgroundRepeat="no-repeat"
+      >
         <Image src={imgUrl} alt={country} />
-        <Stack alignItems="center">
-          <Heading>{country}</Heading>
+      </Box>
+
+      <Stack alignItems="center">
+        <Heading>{country}</Heading>
+        <Link onClick={handleScrollTop} href={route}>
           <Button
             fontWeight="300"
             color="white"
@@ -23,9 +31,9 @@ const CountryCard = ({ props: { country, imgUrl } }) => {
           >
             see location
           </Button>
-        </Stack>
+        </Link>
       </Stack>
-    </Box>
+    </Stack>
   );
 };
 

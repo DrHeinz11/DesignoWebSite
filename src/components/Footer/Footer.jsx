@@ -4,7 +4,7 @@ import handleScrollTop from "../../utils/handleScrollTop";
 import React from "react";
 import FooterContact from "./FooterContact";
 import MediaIcon from "./MediaIcon";
-import Navbar from "../Navbar";
+import Navbar from "../Navbar/Navbar";
 
 const Footer = () => {
   return (

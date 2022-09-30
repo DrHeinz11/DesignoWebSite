@@ -1,6 +1,6 @@
 import { Button, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import PhoneMockup from "../assets/PhoneMockup.png";
+import PhoneMockup from "../../assets/PhoneMockup.png";
 
 const Header = () => {
   return (

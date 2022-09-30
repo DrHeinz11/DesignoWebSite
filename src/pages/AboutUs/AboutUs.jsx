@@ -2,29 +2,32 @@ import { Grid, Image, Stack } from "@chakra-ui/react";
 import React from "react";
 import CustomHeaderBox from "../../components/Custom/CustomHeaderBox";
 import CountryCard from "./CountryCard";
-
 const countryCard = [
   {
     country: "Australia",
     imgUrl:
       "https://adler-designo-app.netlify.app/static/media/illustration-australia.1293a65c.svg",
+    route: "/about-us/location",
     key: 11,
   },
   {
     country: "Canada",
     imgUrl:
       "https://adler-designo-app.netlify.app/static/media/illustration-canada.52886c45.svg",
+    route: "/about-us/location",
     key: 12,
   },
   {
-    country: "United kingdom",
+    country: "United Kingdom",
     imgUrl:
       "https://adler-designo-app.netlify.app/static/media/illustration-united-kingdom.70381d66.svg",
+    route: "/about-us/location",
     key: 13,
   },
 ];
 
 const AboutUs = () => {
+
   return (
     <Stack gap={10}>
       <CustomHeaderBox
@@ -44,13 +47,17 @@ const AboutUs = () => {
         />
       </CustomHeaderBox>
       <Grid
-      minH='50vh'
+        minH="50vh"
+        gap={4}
         w="full"
-        gridTemplateColumns="repeat(auto-fill,minmax(350px,1fr))"
+        gridTemplateColumns="repeat(auto-fit,minmax(300px,1fr))"
         justifyItems={"center"}
       >
         {countryCard?.map((element) => (
-          <CountryCard props={element} key={element.key} />
+          <CountryCard
+            props={element}
+            key={element.key}
+          />
         ))}
       </Grid>
     </Stack>

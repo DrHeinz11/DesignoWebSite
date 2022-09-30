@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import MenuContainer from "./MenuContainer";
-import { MenuSignal } from "../services/ClickOutside-manager.service";
+import { MenuSignal } from "../../services/ClickOutside-manager.service";
 
 const HamburgerMenu = () => {
   const [toggleMenu, setToggleMenu] = useState(false);

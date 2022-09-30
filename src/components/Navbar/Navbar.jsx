@@ -1,6 +1,6 @@
 import { Box, Stack } from "@chakra-ui/react";
-import CustomLink from "./CustomLink";
-import dataLink from "../constants/dataLink";
+import CustomLink from "../Custom/CustomLink";
+import dataLink from "../../constants/dataLink";
 import Logo from "./Logo";
 import { Link } from "wouter";
 import HamburgerMenu from "./HamburgerMenu";

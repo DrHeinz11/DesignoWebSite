@@ -1,7 +1,7 @@
 import "./App.css";
 import Routes from "./routes/Routes";
 import { Stack } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import FooterContainer from "./components/Footer/FooterContainer";
 function App() {
   return (

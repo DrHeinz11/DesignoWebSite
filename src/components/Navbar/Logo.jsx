@@ -1,4 +1,4 @@
-import logo from "../assets/BubleLogo.svg";
+import logo from "../../assets/BubleLogo.svg";
 import { Image, Heading, Stack } from "@chakra-ui/react";
 
 import React from "react";
