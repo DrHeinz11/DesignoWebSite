@@ -24,6 +24,7 @@ const Home = () => {
       </Grid>
       <Divider />
       <DesingSection />
+      <Divider/>
     </>
   );
 };
