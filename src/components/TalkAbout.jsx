@@ -6,8 +6,8 @@ import handleScrollTop from "../utils/handleScrollTop";
 const TalkAbout = () => {
   return (
     <Box
-      backgroundImage={`url(${BubbleBG})`}
       backgroundPosition={{ base: "14rem 0", md: "8rem -8rem" }}
+      backgroundImage={`url(${BubbleBG})`}
       backgroundRepeat="no-repeat"
       backgroundSize={"cover"}
       backgroundColor="mainOrange"
