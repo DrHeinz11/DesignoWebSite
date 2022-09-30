@@ -1,30 +1,7 @@
 import { Grid, Image, Stack } from "@chakra-ui/react";
 import PagesHeading from "./PagesHeading"
-import React from "react";
+import { dataCountry } from "../../constants/dataCountry";
 import CountryCard from "./CountryCard";
-const countryCard = [
-  {
-    country: "Australia",
-    imgUrl:
-      "https://adler-designo-app.netlify.app/static/media/illustration-australia.1293a65c.svg",
-    route: "/about-us/location",
-    key: 11,
-  },
-  {
-    country: "Canada",
-    imgUrl:
-      "https://adler-designo-app.netlify.app/static/media/illustration-canada.52886c45.svg",
-    route: "/about-us/location",
-    key: 12,
-  },
-  {
-    country: "United Kingdom",
-    imgUrl:
-      "https://adler-designo-app.netlify.app/static/media/illustration-united-kingdom.70381d66.svg",
-    route: "/about-us/location",
-    key: 13,
-  },
-];
 
 const AboutUs = () => {
 
@@ -38,7 +15,7 @@ const AboutUs = () => {
         gridTemplateColumns="repeat(auto-fit,minmax(300px,1fr))"
         justifyItems={"center"}
       >
-        {countryCard?.map((element) => (
+        {dataCountry?.map((element) => (
           <CountryCard
             props={element}
             key={element.key}
