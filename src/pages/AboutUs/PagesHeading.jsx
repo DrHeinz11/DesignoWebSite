@@ -4,48 +4,30 @@ import BubbleBG from "../../assets/BubleBg.svg";
 const PagesHeading = ({ imageUrl, heading, copy }) => {
   return (
     <Grid
-      gridTemplateColumns={{
-        base: "1fr",
-        sm: "repeat(3,1fr)",
-      }}
-      gridTemplateRows={{ base: "repeat(2,1fr)", sm: "1fr" }}
-      gridTemplateAreas={{
-        base: `'copy',
-'image'`,
-        sm: "none",
-      }}
-      gap={{ base: 2, md: 4 }}
-      bg="#f7f7f7"
-      backgroundImage={`url(${BubbleBG})`}
-      backgroundRepeat="no-repeat"
-      boxShadow="md"
+      bg="#fdf3f0"
+      w="full"
+      gridTemplateColumns="repeat(auto-fit,minmax(325px,1fr))"
       borderRadius="xl"
+      minH='60vh'
     >
-      <Stack
-        justify={"center"}
-        aling="center"
-        area={"copy"}
-        gridArea={{ sm: "1 / 1 / 2 / 3" }}
-        backdropFilter="blur(50px)"
-        p={{ base: 10, md: 14 }}
-        borderRadius="xl"
-      >
+   <Box
+        textAlign="start"
+        textTransform="capitalize"
+        py="10"
+        px="5"
+        margin="auto 0">
+
         <Heading color="#6c1e0f">{heading}</Heading>
-        <Text fontSize="lg">{copy}</Text>
-      </Stack>
-      <Box
-        area={"image"}
-        gridArea={{ sm: "1 / 3 / 2 / 4" }}
-        borderRadius="xl"
-        backgroundColor="#fdf3f0"
-      >
+        <Text color='blackAlpha.800' mt='10' fontSize="lg">{copy}</Text>
+        </Box>
+      <Box borderRadius="xl" backgroundColor="#fdf3f0" bg='#000'>
         <Image
           borderRadius="xl"
-          h="full"
-          w="full"
+          w="99%"
+          h="100%"
           objectFit="cover"
           src={imageUrl}
-          alt={'${heading} Img'}
+          alt={"${heading} Img"}
         />
       </Box>
     </Grid>

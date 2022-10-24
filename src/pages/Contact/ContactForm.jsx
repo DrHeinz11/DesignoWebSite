@@ -1,16 +1,18 @@
 import { chakra, Stack, Button, Text, Box, Heading } from "@chakra-ui/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 const ContactForm = () => {
   const [formData, setFormData] = useState({});
+  const FormReference = useRef();
   const handleSubmit = () => {
     ev.preventDefault();
-    setFormData(ev.target.data);
+    setFormData([...FormReference.current]);
   };
   return (
-    <Stack maxW='full'
+    <Stack
+      maxW="full"
       direction="row"
       p={{ base: 4, md: 10 }}
-      bg="mainOrange"
+      bg="#e7816b"
       borderRadius="xl"
       boxShadow="sm"
       wrap="wrap"
@@ -19,7 +21,7 @@ const ContactForm = () => {
         <Heading color="#340000" p={2}>
           Contact Us
         </Heading>
-        <Text color="#000" px={2}>
+        <Text color="#000" fontSize="lg" px={2}>
           Ready to take it to the next level? Let’s talk about your project or
           idea and find out how we can help your business grow. If you are
           looking for unique digital experiences that’s relatable to your users,
@@ -27,6 +29,7 @@ const ContactForm = () => {
         </Text>
       </Box>
       <chakra.form
+        ref={FormReference}
         onSubmit={(ev) => handleSubmit(ev)}
         flex="1"
         display="flex"

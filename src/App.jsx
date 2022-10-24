@@ -6,7 +6,7 @@ import FooterContainer from "./components/Footer/FooterContainer";
 function App() {
   return (
     <>
-      <Stack alignItems="center" maxWidth="1000px" gap={10} margin="0 auto">
+      <Stack alignItems="center" maxWidth="1200px" margin="0 auto">
         <Navbar menu={true} />
         <Routes />
       </Stack>

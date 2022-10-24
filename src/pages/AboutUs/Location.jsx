@@ -6,7 +6,7 @@ import {dataLocation} from '../../constants/dataLocation'
 const Location = () => {
   return (
     <>
-      <Stack p="4" gap="8">
+      <Stack p="4" gap="16">
         <PagesHeading
           copy="              Our location is in all the country in east of Europe,includes
               Poland and Ukraine."

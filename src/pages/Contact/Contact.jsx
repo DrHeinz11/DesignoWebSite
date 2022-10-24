@@ -6,7 +6,7 @@ import { Divider, Grid, Stack } from "@chakra-ui/react";
 
 const Contact = () => {
   return (
-    <Stack gap={10} maxW='full' px='4'>
+    <Stack gap={16} maxW='full' px='4'>
       <PagesHeading
         heading="Contact"
         copy="Puedes contactarnos via email o por nuestras redes sociales"
@@ -14,6 +14,7 @@ const Contact = () => {
       />
       <Divider/>
       <ContactForm />
+      <Divider/>
       <Grid
         minH="50vh"
         gap={4}
