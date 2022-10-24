@@ -8,18 +8,21 @@ const CountryCard = ({ props: { country, imgUrl, route } }) => {
       alignItems="center"
       textAlign="center"
       justifyContent="space-between"
+      minW='255px'
     >
       <Box
         backgroundImage={`url(${UndrawBG})`}
         backgroundPosition="top"
         backgroundSize="contain"
         backgroundRepeat="no-repeat"
+        width="100%"
+        height="100%"
       >
-        <Image src={imgUrl} alt={country} />
+        <Image objectFit='cover' w='full' src={imgUrl} alt={country} />
       </Box>
 
       <Stack alignItems="center">
-        <Heading>{country}</Heading>
+        <Heading fontWeight="medium">{country}</Heading>
         <Link onClick={handleScrollTop} href={route}>
           <Button
             fontWeight="300"

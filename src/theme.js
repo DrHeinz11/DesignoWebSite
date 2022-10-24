@@ -7,7 +7,7 @@ export const theme = extendTheme({
     lightGray: "#908f93",
   },
   fonts: {
-    heading: "'Roboto', sans-serif",
-    body: "'Roboto', sans-serif",
+    heading: "'Jost','Roboto', sans-serif",
+    body: "'Jost','Roboto', sans-serif",
   },
 });

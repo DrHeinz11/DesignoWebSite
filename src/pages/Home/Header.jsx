@@ -25,7 +25,7 @@ const Header = () => {
         py={14}
         gap={2}
       >
-        <Heading color="#fafafa">
+        <Heading fontWeight='semibold' color="#fafafa">
           Award-winning custom designs and digital branding solutions
         </Heading>
         <Text color="#fafafa">
