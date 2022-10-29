@@ -21,9 +21,20 @@ It has 3 pages where it provides all the necessary information when hiring a des
 
 ## Screenshots
 
-`![Writing](https://unsplash.com/photos/VBPzRgd7gfc)`
+### Home Page
 
-Picture by [Kelly Sikkema](https://unsplash.com/@kellysikkema)
+![DESIGNO (2)](https://user-images.githubusercontent.com/96245472/198815466-9b764b5c-3ce1-463c-af75-01405833c9bc.png)
+
+
+### Project Page
+
+![DESIGNO](https://user-images.githubusercontent.com/96245472/198815424-3ae8e209-9ec2-4efb-9d25-8cbbfecb64ed.png)
+
+-
+
+![DESIGNO (1)](https://user-images.githubusercontent.com/96245472/198815431-4cf8bc05-6cb2-49f2-84a7-ea2957a591d0.png)
+
+
 
 ## Technologies
 I used `React.Js`,`Wouter`,`ChakraUI`,`Framer Motion` ...
